@@ -98,7 +98,7 @@ position:absolute;
 	
   
 
-.menuitem{ position:fixed relative; bottom:0px; display:inline-block; } 
+.menuitem{ position:fixed relative; bottom:0px; display:inline-block; width: 100px; height: 100px;} 
 
 header#banner p{
 font-size:22px;
