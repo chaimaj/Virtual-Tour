@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<title>Visite virtuelle </title>
+<meta name="Description" content="Phrases pertinentes" />
+<meta name="Keywords" content="Mots pertinent" />
+
+	<meta charset="utf-8" />
+	<link rel="stylesheet" href="style/global.css" />
+	<link rel="stylesheet" href="font/stylesheet.css" />
+
+	
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+
+	<script type="text/javascript" src="http://jqueryjs.googlecode.com/files/jquery-1.3.2.js"></script>
+	<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+<script type="text/javascript">
+	function LoadGmaps() {
+		var myLatlng = new google.maps.LatLng(36.8535304,10.3288818);
+		var myOptions = {
+			zoom: 14,
+			center: myLatlng,
+			disableDefaultUI: true,
+			navigationControl: true,
+			navigationControlOptions: {
+				style: google.maps.NavigationControlStyle.ZOOM_PAN
+			},
+
+			mapTypeControl: false,
+			streetViewControl: false,
+			mapTypeId: google.maps.MapTypeId.ROADMAP
+			}
+		var map = new google.maps.Map(document.getElementById("MyGmaps"), myOptions);
+		var marker = new google.maps.Marker({
+			position: myLatlng,
+			map: map,
+			title:"carthage hannibal"
+		});
+	}
+</script>
+
+	<script type="text/javascript">
+
+$(document).ready(function(){  
+    $('.menuitem img').animate({width: 120}, 0); //Set all menu items to smaller size  
+  
+    $('.menuitem').mouseover(function(){ //When mouse over menu item  
+  
+        gridimage = $(this).find('img'); //Define target as a variable  
+        gridimage.stop().animate({width: 150}, 150); //Animate image expanding to original size  
+  
+    }).mouseout(function(){ //When mouse no longer over menu item  
+  
+        gridimage.stop().animate({width: 120}, 150); //Animate image back to smaller size  
+  
+    });  
+});  
+</script>
+
+</head>
+<body onload="LoadGmaps()" onunload="GUnload()">
+
+<header id="banner">
+ <h1 class="fontface">Visite virtuelle</h1>
+ <p class="sub-title">Site archéologique carthage</p>
+</header>
+<section id="section1">
+<h2> Choisir Le site à visiter </h2>
+<div id="menuwrapper">  
+    <div id="menu">  
+    <a href="projet2\1.html"  target="_blank" class="menuitem"><img src="images/site2.jpg"></a><!--Template for each menu item-->
+	<a href="projet2\2.html"  target="_blank" class="menuitem"><img src="images/site.jpg"></a><!--Template for each menu item-->
+	<a href="projet2\3.html"  target="_blank" class="menuitem"><img src="images/allee.jpg"></a><!--Template for each menu item-->
+	<a href="projet2\4.html"   target="_blank" class="menuitem"><img src="images/bassin.jpg"></a><!--Template for each menu item-->
+	<a href="projet2\statue2.html"   target="_blank" class="menuitem"><img src="images/statue2.jpg"></a><!--Template for each menu item-->
+	<a href="projet2\statue1.html"   target="_blank" class="menuitem"><img src="images/statue1.jpg"></a><!--Template for each menu item-->
+	<a href="projet2\colonne.html"   target="_blank" class="menuitem"><img src="images/colonne.jpg"></a><!--Template for each menu item-->
+	
+	
+    </div>  
+</div> 
+</section> 
+<section id="section2">
+<h2> Brève description</h2>
+<p>
+Fondée dès le IXe siècle av. J.-C. sur le golfe de Tunis,</br>
+Carthage établit à partir du VIe siècle un empire commercial </br>
+s'étendant à une grande partie du monde méditerranéen</br>
+et fut le siège d'une brillante civilisation. </br>
+Au cours des longues guerres puniques, elle occupa </br>
+des territoires de Rome, mais celle-ci la détruisit finalement</br>
+en 146 av. J.-C. Une seconde Carthage, romaine celle-là, </br>
+fut alors fondée sur ses ruines.
+</p>
+</section>
+<section id="section3">
+<h2> Position geographique </h2>
+<div id="MyGmaps" style="width:300px;height:200px;border:1px solid #CECECE;"></div>
+</section>
+<footer id="footer">
+<a href="mailto:chaima.jemmali@gmail.com;Ghazi777@gmail.com" > Nous contacter ! </a>
+</footer>
+
+</body>
+</html>

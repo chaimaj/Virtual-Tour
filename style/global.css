@@ -1,0 +1,126 @@
+﻿/*Par Serge Hebert (Qc) pour Le CONcepteur.ca*/
+/*Pour me joindre shebert@leconcepteur.ca*/
+
+/* CSS Reset */
+*{
+margin: 0;
+padding: 0;
+}
+
+header, footer, aside, nav, article, p {
+display:block;
+}
+
+img{
+border:none
+}
+/*end reset*/
+
+html {
+font-size:100%;
+background:#EDEACB url(../images/bg.jpg) top center no-repeat;
+margin:0;
+padding:0
+}
+
+body {
+color:#000;
+font-size:.9em;
+font-family:Arial, Helvetica, sans-serif;
+background-color:#B5A673;
+border:1px solid #6d7673;
+border-radius:10px;
+-moz-border-radius:10px;
+-moz-box-shadow: 0 0 5px #6d7673;
+-webkit-box-shadow: 0 0 5 px#6d7673;
+box-shadow: 0 0 5px #6d7673;
+width:900px;
+min-height:800px;
+margin:10px auto;
+padding:0;
+}
+
+header#banner{
+color:#EDEACB;
+text-shadow:3px 3px 3px #000;
+background:#6d7673 url(../images/banniere.jpg) no-repeat;
+width:845px;
+height:150px;
+margin:10px 20px;
+padding:5px;
+border:1px solid #6d7673;
+border-radius:10px;
+-moz-border-radius:10px;
+-moz-box-shadow: 0 0 5px #6d7673;
+-webkit-box-shadow: 0 0 5px# 6d7673;
+box-shadow: 0 0 5px #6d7673;
+}
+
+footer#footer{
+color:#EDEACB;
+text-shadow:3px 3px 3px #000;
+background:#6d7673 url(../images/banniere.jpg) no-repeat;
+width:845px;
+height:50px;
+margin:10px 20px;
+padding:5px;
+border:1px solid #6d7673;
+border-radius:10px;
+-moz-border-radius:10px;
+-moz-box-shadow: 0 0 5px #6d7673;
+-webkit-box-shadow: 0 0 5px# 6d7673;
+box-shadow: 0 0 5px #6d7673;
+text-align : center;
+position :absolute;
+top: 730px;
+}
+#section2 p{
+color:#EDEACB;
+margin:10px 20px;
+padding:5px;
+font-family:Arial, Helvetica, sans-serif;
+font-size: 16px;
+
+}
+#section3{
+position:absolute;
+		top: 435px;
+		left: 800px; 
+	}
+
+#menuwrapper{ position:relative;left:15px;bottom:80px; height:200px; }  
+  
+#menu{position:absolute; bottom:0; }  
+	header { font: 30px Helvetica;
+				background-color:#996633;
+				color: #FFFFCC;
+				text-align : center}
+	
+  
+
+.menuitem{ position:fixed relative; bottom:0px; display:inline-block; } 
+
+header#banner p{
+font-size:22px;
+margin:-15px 0 0 5px
+}
+
+nav#menu-top{
+margin-top:120px;
+}
+
+nav#menu-top a{
+color:#fff;
+padding:0 20px;
+text-decoration:none
+}
+
+nav#menu-top a:hover{
+color:#00ff0f;
+}
+
+h2{
+margin:10px 20px;
+color: #5B2407;
+text-shadow:1px 1px 1px #EDEACB;
+}

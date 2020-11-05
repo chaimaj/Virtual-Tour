@@ -1,0 +1,10 @@
+**firefox**
+tape « about:config » in the address bar. After a warning message, The browser options are displayed. Tape webgl in the « Filter » field  to display only WebGL options. Double-clic on the  option « webgl.force-enabled » to hcange its value to « true ». 
+
+
+**Chrome**
+ You need to launch chrome with the option --no-sandbox --enable-webgl.
+
+
+**internet explorer**
+ IE is not compatible with the webGL standards . There is though, a plugin that you can download here http://iewebgl.com/Download.aspx.
